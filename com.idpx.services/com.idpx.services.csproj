@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.idpx.core.oauth\com.idpx.core.oauth.csproj" />
+    <ProjectReference Include="..\com.idpx.core.saml\com.idpx.core.saml.csproj" />
+    <ProjectReference Include="..\com.idpx.core\com.idpx.core.csproj" />
+    <ProjectReference Include="..\com.idpx.data\com.idpx.data.csproj" />
+    <ProjectReference Include="..\fribs.netcore.cache\fribs.netcore.cache.csproj" />
+  </ItemGroup>
+
+</Project>

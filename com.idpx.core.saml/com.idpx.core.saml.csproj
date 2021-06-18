@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>com.idpx.core.saml</AssemblyName>
+    <RootNamespace>com.idpx.core.saml</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ref\**" />
+    <EmbeddedResource Remove="ref\**" />
+    <None Remove="ref\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.idpx.core\com.idpx.core.csproj" />
+    <ProjectReference Include="..\com.idpx.data\com.idpx.data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ComponentPro.EasySaml.NetCore">
+      <HintPath>ref\ComponentPro.EasySaml.NetCore.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="ComponentPro.Saml.NetCore">
+      <HintPath>ref\ComponentPro.Saml.NetCore.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>com.idpx.core.oauth.clients</AssemblyName>
+    <RootNamespace>com.idpx.core.oauth.clients</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Standard\**" />
+    <EmbeddedResource Remove="Standard\**" />
+    <None Remove="Standard\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="TwitterApiClient.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jose-jwt" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.idpx.core.oauth.data\com.idpx.core.oauth.data.csproj" />
+    <ProjectReference Include="..\com.idpx\com.idpx.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Security.Cryptography.Cng">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\system.security.cryptography.cng\4.5.0\ref\netcoreapp2.1\System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

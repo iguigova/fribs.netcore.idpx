@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>com.idpx.core.oauth</AssemblyName>
+    <RootNamespace>com.idpx.core.oauth</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jose-jwt" Version="3.0.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.12.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\com.idpx.core.oauth.clients\com.idpx.core.oauth.clients.csproj" />
+    <ProjectReference Include="..\com.idpx.core\com.idpx.core.csproj" />
+    <ProjectReference Include="..\com.idpx.data\com.idpx.data.csproj" />
+    <ProjectReference Include="..\fribs.netcore.cache\fribs.netcore.cache.csproj" />
+  </ItemGroup>
+
+</Project>
